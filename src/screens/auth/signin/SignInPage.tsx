@@ -1,4 +1,4 @@
-import { MouseEvent, useState } from "react"
+import { useState } from "react"
 import profileIcon from "../../../assets/svg/profile.svg"
 import eyesOffIcon from "../../../assets/svg/eyesoff-outlined.svg"
 import eyesOnIcon from "../../../assets/svg/eyeson-outlined.svg"
@@ -11,7 +11,7 @@ const SignInPage = () => {
         setshowPassword(!showPassword)
     }
 
-    const handleLogin = (e: MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    const handleLogin = (e:unknown) => {
         e.preventDefault()
         console.log("LOGIN")
         console.log("password ===>>>", password)
@@ -32,7 +32,9 @@ const SignInPage = () => {
             </div>
 
             <div className="px-6 mt-4 flex-center">
-                <form className="flex flex-col gap-4">
+                <form 
+                    onSubmit={handleLogin}
+                    className="flex flex-col gap-4">
                     <div className="form-group relative">
                         <input 
                             className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400  p-2 w-full border-2 border-gray-200 rounded-[8px]" 
@@ -51,7 +53,6 @@ const SignInPage = () => {
                     </div>
 
                     <button
-                        onClick={(e)=> handleLogin(e)}
                         className="p-2 text-white w-full bg-amber-300 border-2 border-amber-300 rounded-[8px]"
                     >
                         <span>Login</span>
