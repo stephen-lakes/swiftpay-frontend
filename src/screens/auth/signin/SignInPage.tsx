@@ -24,6 +24,7 @@ const SignInPage = () => {
         <div className="w-full max-w-[400px]">
             <div className="flex flex-col items-center gap-4 font-semibold">
                 <p>{`Swify--->pay`}</p>
+                <h1 className="text-center text-3xl font-bold">Sign In</h1>
                 <div 
                     className="flex items-center justify-center w-10 h-10 border-1 border-gray-200 bg-gray-100 rounded-full">
                     <img src={profileIcon} alt="" />
