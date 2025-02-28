@@ -1,5 +1,6 @@
 import { useState } from "react"
 import profileIcon from "../../../assets/svg/profile.svg"
+import sPayLogo from "../../../assets/img/spaylogo1.png"
 import eyesOffIcon from "../../../assets/svg/eyesoff-outlined.svg"
 import eyesOnIcon from "../../../assets/svg/eyeson-outlined.svg"
 
@@ -23,7 +24,9 @@ const SignInPage = () => {
     <div className="mt-12 flex justify-center">
         <div className="w-full max-w-[400px]">
             <div className="flex flex-col items-center gap-4 font-semibold">
-                <p>{`Swify--->pay`}</p>
+                <div className="w-[200px]">
+                    <img src={sPayLogo} alt="" />
+                </div>
                 <h1 className="text-center text-3xl font-bold">Sign In</h1>
                 <div 
                     className="flex items-center justify-center w-10 h-10 border-1 border-gray-200 bg-gray-100 rounded-full">
