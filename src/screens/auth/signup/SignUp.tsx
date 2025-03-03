@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent } from "react";
 import sPayLogo from "../../../assets/img/spaylogo1.png"
+import { Link } from "react-router-dom";
 
 
 interface SignUpPageProps {
@@ -104,6 +105,12 @@ const SignUpPage = ({ handleNextPage, signUpData, handleChange }: SignUpPageProp
                         <span>Sign up</span>
                     </button>
                 </form>
+            </div>
+
+            <div className="mt-10 text-center text-xs capitalize">
+                <Link to="/auth/signin"> 
+                    Login instead
+                </Link>
             </div>
         </div>
     </div>
