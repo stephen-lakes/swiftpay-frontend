@@ -8,7 +8,7 @@ interface SwiftPayMiniCardProp {
 const SwiftPayMiniCard: React.FC<SwiftPayMiniCardProp> = ({ icon, title}) => {
   return (
     <>
-        <div className="flex flex-col justify-center items-center bg-gray-200 w-16 h-16 rounded-2xl">
+        <div className="flex flex-col justify-center items-center bg-gray-200 w-16 h-16 rounded-2xl cursor-pointer">
             <div>
               <img src={icon} alt="" />
             </div>
