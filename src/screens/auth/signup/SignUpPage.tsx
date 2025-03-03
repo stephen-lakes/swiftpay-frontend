@@ -3,7 +3,7 @@ import sPayLogo from "../../../assets/img/spaylogo1.png"
 
 
 const SignUpPage = () => {
-    const [signUpFormData, setSignUpFormData] = useState({
+    const [signUpData, setSignUpData] = useState({
         email: '',
         // phoneNumber: '',
         firstname: '',
@@ -16,16 +16,35 @@ const SignUpPage = () => {
         const { name, value } = event.target;
         console.log(name)
         console.log(value)
-        setSignUpFormData({
-            ...signUpFormData,
+        setSignUpData({
+            ...signUpData,
             [name]: value,
         })
     }
     
 
+    const validateForm = () => {
+        const { email, password, confirmPassword } = signUpData
+        if(!email || !password || !confirmPassword) {
+            return false;
+        }
+        if(password !== confirmPassword){
+            return false;
+        }
+
+        return true
+    }
+    
+
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log(signUpFormData)
+        if (validateForm()){
+            console.log("FORM IS VALID ==>>>", signUpData)
+            
+        }else {
+            console.log("FORM IS INVALID ==>>>", signUpData)
+        }
+        
     }
 
 
@@ -48,9 +67,9 @@ const SignUpPage = () => {
                             className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400  p-2 w-full border-2 border-gray-200 rounded-[8px]" 
                             placeholder="Enter your email or phone number"
                             name="email"
-                            value={signUpFormData.email}
+                            value={signUpData.email}
                             onChange={handleChnage}
-                            // type={showPassword ? "text" : "password"}
+                            type="text"
                             
                         />
                     </div>
@@ -61,7 +80,7 @@ const SignUpPage = () => {
                             className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400  p-2 w-full border-2 border-gray-200 rounded-[8px]" 
                             placeholder="Enter your password"
                             name="password"
-                            value={signUpFormData.password}
+                            value={signUpData.password}
                             onChange={handleChnage}
                             // type={showPassword ? "text" : "password"}
                             type="password"
@@ -74,7 +93,7 @@ const SignUpPage = () => {
                             className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400  p-2 w-full border-2 border-gray-200 rounded-[8px]" 
                             placeholder="Confirm your password"
                             name="confirmPassword"
-                            value={signUpFormData.confirmPassword}
+                            value={signUpData.confirmPassword}
                             onChange={handleChnage}
                             // type={showPassword ? "text" : "password"}
                             type="password"
