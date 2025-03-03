@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        
         <Routes>
           <Route path="/" element={<AuthIndex />} />
           <Route path="/dashboard" element={<Home />} />
