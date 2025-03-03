@@ -34,21 +34,25 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData,
   };
 
   const getOtpValues = (): string => {
-    return inputs.current.map(input => input?.value).join('');
+    return inputs.current.map(input => input?.value || "").join('');
   };
-
- 
 
   const verifyOtp = () => {
-    const otp = getOtpValues();
-    setVerifyingOTP(true)
-    
-    console.log("OTP=>>>", otp);
-    // Add OTP verification logic here
+    const otpValues = inputs.current.map(input => input?.value || "");
+    const allInputsFilled = otpValues.every(value => value !== "");
 
-    // handleNextPage();
+    if (allInputsFilled) {
+      const otp = otpValues.join('');
+      console.log("OTP:", otp);
+      setTimeout(() => {
+        setVerifyingOTP(false);
+        handleNextPage();
+      }, 2000);
+    } else {
+      setVerifyingOTP(false);
+      alert("Please fill all OTP fields.");
+    }
   };
-
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-4 mt-16">
