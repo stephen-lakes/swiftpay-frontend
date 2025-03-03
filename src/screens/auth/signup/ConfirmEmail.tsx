@@ -9,7 +9,7 @@ interface ConfirmEmailProps {
   handlePreviousPage: () => void;
 }
 
-const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData, handlePreviousPage }) => {
+const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData }) => {
   const [verifyingOTP, setVerifyingOTP] = useState(false);
   const inputs = useRef<(HTMLInputElement | null)[]>([]);
 
@@ -58,7 +58,7 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData,
       <div className="flex flex-col items-center justify-center gap-4 mt-16">
         <div className="text-gray-700 text-3xl font-bold">Confirm Email</div>
         <form>
-          <div>{hideEmail(signUpData.email)}</div>
+          <div className="my-4 text-center">{hideEmail(signUpData.email)}</div>
           <div className="flex items-center gap-4">
             {Array(6).fill(0).map((_, index) => (
               <input
