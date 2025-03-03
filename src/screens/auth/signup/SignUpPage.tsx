@@ -1,8 +1,22 @@
-import { FormEvent } from "react"
+import { ChangeEvent, FormEvent } from "react";
 import sPayLogo from "../../../assets/img/spaylogo1.png"
 
 
-const SignUpPage = ({ handleNextPage, signUpData, handleChange }) => {
+interface SignUpPageProps {
+    handleNextPage: () => void;
+    signUpData: {
+        email: string;
+        phoneNumber: string;
+        firstname: string;
+        lastname: string;
+        password: string;
+        confirmPassword: string;
+    };
+    handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
+}
+
+
+const SignUpPage = ({ handleNextPage, signUpData, handleChange }: SignUpPageProps) => {
     
     const validateForm = () => {
         const { email, password, confirmPassword } = signUpData
