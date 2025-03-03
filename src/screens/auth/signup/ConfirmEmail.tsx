@@ -1,5 +1,6 @@
-import { useRef, ChangeEvent } from "react";
+import { useRef, ChangeEvent, useState } from "react";
 import { hideEmail } from "../../../utils/utils";
+import Loader from "../../../components/forms/Loader";
 
 // Define props types
 interface ConfirmEmailProps {
@@ -9,6 +10,7 @@ interface ConfirmEmailProps {
 }
 
 const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData, handlePreviousPage }) => {
+  const [verifyingOTP, setVerifyingOTP] = useState(false);
   const inputs = useRef<(HTMLInputElement | null)[]>([]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>, index: number) => {
@@ -19,6 +21,34 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData,
     if (value.length >= maxLength && nextInput < inputs.current.length) {
       inputs.current[nextInput]?.focus();
     }
+
+     // Automatically verify OTP after last input is entered
+     if (index === inputs.current.length - 1 && value.length === maxLength) {
+      verifyOtp();
+    }
+
+  };
+
+  const getOtpValues = (): string => {
+    return inputs.current.map(input => input?.value).join('');
+  };
+
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   const otp = getOtpValues();
+  //   console.log("OTP:", otp);
+  //   // You can proceed with OTP verification here
+  //   handleNextPage();
+  // };
+
+  const verifyOtp = () => {
+    const otp = getOtpValues();
+    setVerifyingOTP(true)
+    
+    console.log("OTP=>>>", otp);
+    // Add OTP verification logic here
+
+    // handleNextPage();
   };
 
   return (
@@ -40,8 +70,14 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData,
             ))}
           </div>
           <div className="text-xs mt-2">
-            <span className="text-blue-300 flex justify-end cursor-pointer">resend OTP</span>
+            <span className="text-[#3B82F6] flex justify-end cursor-pointer">resend OTP</span>
           </div>
+
+          {/* <button className="mt-4 p-2 text-white w-full bg-amber-300 border-2 border-amber-300 rounded-[8px]" type="submit">Verify</button> */}
+          <div className="mt-4">
+            {verifyingOTP && <Loader />}
+          </div>
+          
         </form>
       </div>
     </>
