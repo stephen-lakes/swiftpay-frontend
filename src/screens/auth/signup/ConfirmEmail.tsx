@@ -1,6 +1,6 @@
-import { useRef, ChangeEvent, useState } from "react";
+import { useRef, ChangeEvent, useState, useEffect } from "react";
 import { hideEmail } from "../../../utils/utils";
-import Loader from "../../../components/forms/Loader";
+import Loader from "../../../components/Loader";
 
 // Define props types
 interface ConfirmEmailProps {
@@ -12,6 +12,10 @@ interface ConfirmEmailProps {
 const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData, handlePreviousPage }) => {
   const [verifyingOTP, setVerifyingOTP] = useState(false);
   const inputs = useRef<(HTMLInputElement | null)[]>([]);
+
+  useEffect(() => {
+    inputs.current[0]?.focus();
+  }, []);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>, index: number) => {
     const { maxLength, value } = e.target;
@@ -33,13 +37,7 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData,
     return inputs.current.map(input => input?.value).join('');
   };
 
-  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   const otp = getOtpValues();
-  //   console.log("OTP:", otp);
-  //   // You can proceed with OTP verification here
-  //   handleNextPage();
-  // };
+ 
 
   const verifyOtp = () => {
     const otp = getOtpValues();
