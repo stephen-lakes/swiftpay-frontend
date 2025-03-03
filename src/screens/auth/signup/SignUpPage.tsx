@@ -1,28 +1,9 @@
-import { ChangeEvent, FormEvent, useState } from "react"
+import { FormEvent } from "react"
 import sPayLogo from "../../../assets/img/spaylogo1.png"
 
 
-const SignUpPage = () => {
-    const [signUpData, setSignUpData] = useState({
-        email: '',
-        // phoneNumber: '',
-        firstname: '',
-        lastname: '',
-        password: '',
-        confirmPassword: '',
-    })
-
-    const handleChnage = (event: ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = event.target;
-        console.log(name)
-        console.log(value)
-        setSignUpData({
-            ...signUpData,
-            [name]: value,
-        })
-    }
+const SignUpPage = ({ handleNextPage, signUpData, handleChange }) => {
     
-
     const validateForm = () => {
         const { email, password, confirmPassword } = signUpData
         if(!email || !password || !confirmPassword) {
@@ -40,8 +21,9 @@ const SignUpPage = () => {
         event.preventDefault();
         if (validateForm()){
             console.log("FORM IS VALID ==>>>", signUpData)
+            handleNextPage()
             
-        }else {
+        } else {
             console.log("FORM IS INVALID ==>>>", signUpData)
         }
         
@@ -68,7 +50,7 @@ const SignUpPage = () => {
                             placeholder="Enter your email or phone number"
                             name="email"
                             value={signUpData.email}
-                            onChange={handleChnage}
+                            onChange={handleChange}
                             type="text"
                             
                         />
@@ -81,7 +63,7 @@ const SignUpPage = () => {
                             placeholder="Enter your password"
                             name="password"
                             value={signUpData.password}
-                            onChange={handleChnage}
+                            onChange={handleChange}
                             // type={showPassword ? "text" : "password"}
                             type="password"
                         />
@@ -94,7 +76,7 @@ const SignUpPage = () => {
                             placeholder="Confirm your password"
                             name="confirmPassword"
                             value={signUpData.confirmPassword}
-                            onChange={handleChnage}
+                            onChange={handleChange}
                             // type={showPassword ? "text" : "password"}
                             type="password"
 
