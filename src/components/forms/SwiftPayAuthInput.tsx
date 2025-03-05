@@ -4,7 +4,7 @@ import eyesOnIcon from "../../assets/svg/eyeson-outlined.svg"
 
 
 
-const AuthInput = () => {
+const SwiftPayAuthInput = () => {
     const [password, setpassword] = useState('')
     const [showPassword, setshowPassword] = useState(false)
     
@@ -34,4 +34,4 @@ const AuthInput = () => {
     )
 }
 
-export default AuthInput
+export default SwiftPayAuthInput
