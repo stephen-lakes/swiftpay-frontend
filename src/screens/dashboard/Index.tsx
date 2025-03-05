@@ -6,7 +6,7 @@ const Dashboard: React.FC = () => {
   return (
     <>
 
-        <main>
+        <main className="px-2">
             <Outlet />
         </main>
 
