@@ -20,7 +20,6 @@ const SignInPage = () => {
 
   return (
     <>
-    {/* <div className="mx-auto my-10 max-w-[400px] border-2"> */}
     <div className="mt-4 flex justify-center">
         <div className="w-full max-w-[400px]">
             <div className="flex flex-col items-center gap-4 font-semibold">
