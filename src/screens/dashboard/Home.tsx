@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar"
 import SendIcon from ".././../assets/svg/send.svg"
 import BankIcon from ".././../assets/svg/bank.svg"
 import SwiftPayMiniCard from "../../components/cards/SwiftPayMiniCard"
@@ -9,7 +8,8 @@ import React from "react"
 const Home:React.FC = () => {
   return (
     <>
-      <div className="mx-auto px-3 py-6 w-full max-w-[400px] h-screen relative border-gray-300 shadow-gray-300 md:border">
+      {/* <div className="mx-auto px-3 py-6 w-full max-w-[400px] h-screen border-gray-300 shadow-gray-300 md:border"> */}
+      <div className="">
         <div className="py-3 font-light">Hi, <span className="font-mono">Stephen</span></div>
 
         <SwiftPayAccountBalanceCard balance="200,000" />
@@ -22,7 +22,6 @@ const Home:React.FC = () => {
           <SwiftPayMiniCard icon={BankIcon} title="electricity" nextPage="electricity" />
         </div>
 
-        <Navbar />
       </div>
     </>
   )
