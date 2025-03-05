@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
         {/* USE EVENT DELEGATIO FOR THE LINKS */}
-        <div className="p-3 flex justify-around absolute bottom-0 left-3 right-3 bg-amber-400 rounded-full">
+        <div className="p-3 flex justify-around absolute bottom-2 left-3 right-3 bg-amber-400 rounded-full">
             
             <div onClick={() => setActiveTab("home")} className="cursor-pointer flex flex-col items-center">
                 <div>
