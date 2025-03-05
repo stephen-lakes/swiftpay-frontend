@@ -15,10 +15,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        
+
         <Routes>
+          {/* TODO: Landing page for the base route "/" */}
+          <Route path="/" element={<SignIn />} />
+
           <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="home" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="cards" element={<Cards />} />
             <Route path="profile" element={<Profile />} />
           </Route>
