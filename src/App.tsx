@@ -9,6 +9,7 @@ import BankTransfer from './screens/BankTransfer';
 import Electricity from './screens/Electricity';
 import Data from './screens/Data';
 import Airtime from './screens/Airtime';
+import Dashboard from './screens/dashboard/Index';
 
 function App() {
   return (
@@ -16,17 +17,18 @@ function App() {
       <BrowserRouter>
         
         <Routes>
-          <Route path="/" element={<AuthIndex />} />
-          <Route path="/dashboard" element={<Home />} />
-          <Route path="/cards" element={<Cards />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="home" element={<Home />} />
+            <Route path="cards" element={<Cards />} />
+            <Route path="profile" element={<Profile />} />
+          </Route>
 
           <Route path="/transfer" element={<SwiftPayTransfer />} />
           <Route path="/bank-transfer" element={<BankTransfer />} />
           <Route path="/airtime" element={<Airtime />} />
           <Route path="/data" element={<Data />} />
           <Route path="/electricity" element={<Electricity />} />
-          
+
           <Route path="/auth">
             <Route path="signup" element={<AuthIndex />} />
             <Route path="signin" element={<SignInPage />} />
