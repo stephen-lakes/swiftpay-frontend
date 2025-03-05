@@ -38,7 +38,7 @@ const SignInPage = () => {
                 <form 
                     onSubmit={handleLogin}
                     className="flex flex-col gap-4">
-                    <div className="form-group relative ">
+                    <div className="form-group relative">
                         <input 
                             className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400  p-2 w-full border-2 border-gray-200 rounded-[8px]" 
                             placeholder="Enter password"
