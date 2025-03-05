@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
         {/* USE EVENT DELEGATIO FOR THE LINKS */}
-        <div className="p-3 flex justify-around absolute bottom-3 left-3 right-3 bg-amber-400 rounded-full">
+        <div className="p-3 flex justify-around absolute bottom-0 left-3 right-3 bg-amber-400 rounded-full">
             
             <div onClick={() => setActiveTab("home")} className="cursor-pointer flex flex-col items-center">
                 <div>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     }
                     
                 </div>
-                <div className={`${activeTab === "home" ? "font-semibold text-white": ""}`}>Home</div>
+                <div className={`text-xs${activeTab === "home" ? "font-semibold text-white": ""}`}>Home</div>
             </div>
         
         
@@ -46,7 +46,7 @@ const Navbar = () => {
                         <img src={CreditCardIcon} alt="" />
                     }
                 </div>
-                <div className={`${activeTab === "cards" ? "font-semibold text-white": ""}`}>Cards</div>
+                <div className={`text-xs ${activeTab === "cards" ? "font-semibold text-white": ""}`}>Cards</div>
             </div>
         
         
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <img src={UserIcon} alt="" />
                     }
                 </div>
-                <div className={`${activeTab === "profile" ? "font-semibold text-white": ""}`}>Profile</div>
+                <div className={`text-xs ${activeTab === "profile" ? "font-semibold text-white": ""}`}>Profile</div>
             </div>
             
         </div>
