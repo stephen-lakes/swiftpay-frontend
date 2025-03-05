@@ -3,8 +3,9 @@ import profileIcon from "../../../assets/svg/profile.svg"
 import sPayLogo from "../../../assets/img/spaylogo1.png"
 import eyesOffIcon from "../../../assets/svg/eyesoff-outlined.svg"
 import eyesOnIcon from "../../../assets/svg/eyeson-outlined.svg"
+import { Link } from "react-router-dom"
 
-const SignInPage = () => {
+const SignIn = () => {
     const [password, setpassword] = useState('')
     const [showPassword, setshowPassword] = useState(false)
 
@@ -61,6 +62,14 @@ const SignInPage = () => {
                         <span>Login</span>
                     </button>
                 </form>
+
+                <div className="mt-10 text-center text-xs capitalize">
+                    <Link to="/auth/signup"> 
+                        Signup instead
+                    </Link>
+                </div>
+
+                
             </div>
         </div>
     </div>
@@ -68,4 +77,4 @@ const SignInPage = () => {
   )
 }
 
-export default SignInPage
+export default SignIn

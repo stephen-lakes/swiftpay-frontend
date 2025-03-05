@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AuthIndex from './screens/auth/signup/Index';
+import SignIn from './screens/auth/signin/Index';
 import Home from './screens/dashboard/Home';
-import SignInPage from './screens/auth/signin/SignInPage';
 import Profile from './screens/dashboard/Profile';
 import Cards from './screens/dashboard/Cards';
 import SwiftPayTransfer from './screens/SwiftPayTransfer';
@@ -31,7 +31,7 @@ function App() {
 
           <Route path="/auth">
             <Route path="signup" element={<AuthIndex />} />
-            <Route path="signin" element={<SignInPage />} />
+            <Route path="signin" element={<SignIn />} />
           </Route>
         </Routes>
       </BrowserRouter>
