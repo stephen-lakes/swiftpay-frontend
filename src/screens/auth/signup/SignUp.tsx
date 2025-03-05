@@ -56,7 +56,7 @@ const SignUpPage = ({ handleNextPage, signUpData, handleChange }: SignUpPageProp
                 <h1 className="text-center text-gray-700 text-3xl font-bold">Sign Up</h1>
             </div>
 
-            <div className="px-6 mt-4 flex-center">
+            <div className="px-6 mt-4">
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                     <div className="form-group relative">
                         <label className="text-gray-500">Email</label>
