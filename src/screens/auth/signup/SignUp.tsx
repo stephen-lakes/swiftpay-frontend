@@ -47,7 +47,7 @@ const SignUpPage = ({ handleNextPage, signUpData, handleChange }: SignUpPageProp
 
   return (
     <>
-    <div className="mt-12 flex justify-center">
+    <div className="mt-4 flex justify-center">
         <div className="w-full min-w-72 max-w-[400px]">
             <div className="flex flex-col items-center gap-4 font-semibold">
                 <div className="w-[200px]">

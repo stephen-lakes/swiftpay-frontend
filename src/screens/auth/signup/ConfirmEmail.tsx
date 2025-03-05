@@ -55,7 +55,7 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData 
   };
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 mt-16">
+      <div className="flex flex-col items-center justify-center gap-4 mt-12">
         <div className="text-gray-700 text-3xl font-bold">Confirm Email</div>
         <form>
           <div className="my-4 text-center">{hideEmail(signUpData.email)}</div>
