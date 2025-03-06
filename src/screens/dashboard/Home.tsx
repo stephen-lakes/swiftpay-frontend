@@ -8,8 +8,7 @@ import React from "react"
 const Home:React.FC = () => {
   return (
     <>
-      {/* <div className="mx-auto px-3 py-6 w-full max-w-[400px] h-screen border-gray-300 shadow-gray-300 md:border"> */}
-      <div className="">
+      <div>
         <div className="py-3 font-light">Hi, <span className="font-mono">Stephen</span></div>
 
         <SwiftPayAccountBalanceCard balance="200,000" />
