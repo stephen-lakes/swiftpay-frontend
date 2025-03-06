@@ -11,7 +11,8 @@ const Navbar = () => {
 
     const handleClick = (screen: string) => {
         setActiveTab(screen)
-        navigate(screen === "home" ? "/" : `/${screen}`);
+        navigate(screen === "home" ? "/dashboard" : `/dashboard/${screen}`);
+
     }
     
   return (
