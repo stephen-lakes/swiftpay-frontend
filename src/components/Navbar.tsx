@@ -11,13 +11,17 @@ const Navbar = () => {
 
     const handleClick = (screen: string) => {
         setActiveTab(screen)
-        naviagte(`${screen}`)
+        if (screen !== "home")
+            naviagte(`${screen}`)
+        else
+            naviagte(``)
+
     }
     
   return (
     <>
         {/* USE EVENT DELEGATIO FOR THE LINKS */}
-        <div className="p-3 flex justify-around absolute bottom-2 left-1 right-1 bg-amber-400 rounded-full">
+        <div className="min-w-[272px] p-3 flex items-center justify-around absolute bottom-2 left-1 right-1 bg-amber-400 rounded-full">
             
             <div onClick={() => handleClick("home")} className="cursor-pointer flex flex-col items-center">
                 <div>
