@@ -16,10 +16,16 @@ interface SignUpPageProps {
 }
 
 const SignUpPage: React.FC<SignUpPageProps> = ({ handleNextPage, signUpData, handleChange }) => {
-  const validateForm = (): boolean => {
-    const { email, password, confirmPassword } = signUpData;
-    return email && password && confirmPassword && password === confirmPassword;
-  };
+    const validateForm = (): boolean => {
+        const { email, password, confirmPassword } = signUpData;
+        return (
+          Boolean(email) && 
+          Boolean(password) && 
+          Boolean(confirmPassword) && 
+          password === confirmPassword
+        );
+    };
+      
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
