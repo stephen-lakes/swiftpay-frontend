@@ -7,15 +7,11 @@ import { useNavigate } from "react-router-dom"
 const Navbar = () => {
     const [activeTab, setActiveTab] = useState('home');
 
-    const naviagte = useNavigate()
+    const navigate = useNavigate()
 
     const handleClick = (screen: string) => {
         setActiveTab(screen)
-        if (screen !== "home")
-            naviagte(`${screen}`)
-        else
-            naviagte(``)
-
+        navigate(screen === "home" ? "/" : `/${screen}`);
     }
     
   return (
