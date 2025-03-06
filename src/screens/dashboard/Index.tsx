@@ -5,7 +5,6 @@ import { Outlet } from 'react-router-dom'
 const Dashboard: React.FC = () => {
   return (
     <>
-
         <main className="px-2">
             <Outlet />
         </main>
