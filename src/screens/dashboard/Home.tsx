@@ -1,6 +1,8 @@
 import React from "react"
 import SendIcon from ".././../assets/svg/send.svg"
 import BankIcon from ".././../assets/svg/bank.svg"
+import ElectricityIcon from ".././../assets/svg/electricity.svg"
+import WifiIcon from ".././../assets/svg/wifi.svg"
 import SwiftPayMiniCard from "../../components/cards/SwiftPayMiniCard"
 import SwiftPayAccountBalanceCard from "../../components/cards/SwiftPayAccountBalanceCard"
 import SwiftPayTransactionHistoryList from "../../components/cards/SwiftPayTransactionHistoryCard"
@@ -14,12 +16,12 @@ const Home:React.FC = () => {
 
         <SwiftPayAccountBalanceCard balance="200,000" />
 
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 mt-10">
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 mt-4">
           <SwiftPayMiniCard icon={SendIcon} title="transfer" nextPage="transfer" />
           <SwiftPayMiniCard icon={BankIcon} title="bank" nextPage="bank-transfer" />
-          <SwiftPayMiniCard icon={BankIcon} title="airtime" nextPage="airtime" />
-          <SwiftPayMiniCard icon={BankIcon} title="data" nextPage="data" />
-          <SwiftPayMiniCard icon={BankIcon} title="electricity" nextPage="electricity" />
+          <SwiftPayMiniCard icon={WifiIcon} title="airtime" nextPage="airtime" />
+          <SwiftPayMiniCard icon={WifiIcon} title="data" nextPage="data" />
+          <SwiftPayMiniCard icon={ElectricityIcon} title="electricity" nextPage="electricity" />
         </div>
 
         <div className="transactions pb-24 p-2">
