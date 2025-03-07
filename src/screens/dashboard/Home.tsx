@@ -16,7 +16,7 @@ const Home:React.FC = () => {
 
         <SwiftPayAccountBalanceCard balance="200,000" />
 
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 mt-4">
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-3 mt-4 place-items-center">
           <SwiftPayMiniCard icon={SendIcon} title="transfer" nextPage="transfer" />
           <SwiftPayMiniCard icon={BankIcon} title="bank" nextPage="bank-transfer" />
           <SwiftPayMiniCard icon={WifiIcon} title="airtime" nextPage="airtime" />
