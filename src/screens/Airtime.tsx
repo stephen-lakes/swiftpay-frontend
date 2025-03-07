@@ -1,8 +1,11 @@
 import React from 'react'
+import SwiftPayScreenHeader from '../components/SwiftPayScreenHeader'
 
 const Airtime: React.FC = () => {
   return (
-    <div>Airtime</div>
+    <>
+      <SwiftPayScreenHeader screenTitle="Airtime"/>
+    </>
   )
 }
 

@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import Loader from '../components/Loader'
+import SwiftPayScreenHeader from '../components/SwiftPayScreenHeader';
 
 const SwiftPayTransfer: React.FC = () => {
   const [verifyReceiver, setVerifyReceiver] = useState(false);
   return (
     <>
-    <div>
-      <h1 className="mt-10 mb-3 text-center">SwiftPayTransfer</h1>
+      <SwiftPayScreenHeader screenTitle="Swiftpay Transfer"/>
+
       <form>
         <div className="flex flex-col gap-3 px-3">
           <input
               className="p-2 w-full border-2 border-gray-200 rounded-[8px]"
-              placeholder='username/email/phone number'
+              placeholder='account number or email or phone number'
               type="text" 
           />
 
@@ -22,6 +23,15 @@ const SwiftPayTransfer: React.FC = () => {
             James Smith
           </div>
 
+          <div>
+            REMARK(Optional)
+            <input
+                className="p-2 w-full border-2 border-gray-200 rounded-[8px]"
+                type="text" 
+            />
+          </div>
+
+
           <div className="p-3 flex items-center justify-center bg-amber-400 rounded text-white">
             PROCEED
           </div>
@@ -29,13 +39,6 @@ const SwiftPayTransfer: React.FC = () => {
         </div>
       </form>
 
-
-      <div className="pin keyboard">
-        Key board comes up to comfirm
-        transaction with PIN.
-        This component can be moved to its component
-      </div>
-    </div>
     </>
   )
 }

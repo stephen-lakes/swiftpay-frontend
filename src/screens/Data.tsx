@@ -1,8 +1,12 @@
 import React from 'react'
+import SwiftPayScreenHeader from '../components/SwiftPayScreenHeader'
 
 const Data: React.FC = () => {
   return (
-    <div>Data</div>
+    <>
+      <SwiftPayScreenHeader screenTitle="Data"/>
+
+    </>
   )
 }
 

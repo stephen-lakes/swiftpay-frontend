@@ -1,7 +1,10 @@
+import SwiftPayScreenHeader from "../../components/SwiftPayScreenHeader"
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <>
+      <SwiftPayScreenHeader screenTitle="Profile"/>
+    </>
   )
 }
 
