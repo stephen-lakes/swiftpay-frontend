@@ -13,7 +13,7 @@ const SwiftPaySplashScreen: React.FC = () => {
   }, [navigate])
 
   return (
-    <div className="h-screen grid grid-cols-1 place-items-center bg-purple-600">
+    <div className="h-screen grid grid-cols-1 place-items-center bg-[#9880E5]">
       <h1 className="text-4xl font-extrabold text-white">SWIFTPAY</h1>
     </div>
   )
