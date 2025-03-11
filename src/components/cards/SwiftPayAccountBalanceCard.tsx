@@ -7,25 +7,29 @@ interface SwiftPayAccountBalanceCardProp {
 }
 
 const SwiftPayAccountBalanceCard: React.FC<SwiftPayAccountBalanceCardProp> = ({ balance }) => {
-  const [isBalanceVisible, setIsBalanceVisible] = useState(false);
+  const [isBalanceVisible, setIsBalanceVisible] = useState(true);
 
   const toggleBalanceVisibility = () => {
     setIsBalanceVisible(!isBalanceVisible);
   };
 
   return (
-    <div className="bg-purple-400 text-white rounded-xl p-3 flex flex-col gap-4">
-      <div className="flex items-center gap-2">
-        <span>Available Balance</span>
-        <img
-          className="cursor-pointer"
-          onClick={toggleBalanceVisibility}
-          src={isBalanceVisible ? EyeOnIcon : EyeOffIcon}
-          alt={isBalanceVisible ? "Hide Balance" : "Show Balance"}
-        />
+    <div className="bg-purple-400 text-white flex flex-col rounded-lg">
+      <div className="flex gap-2 items-center">
+        <p className="pl-3 py-3">Available Balance</p>
+        <div className="">
+          <img 
+            className="cursor-pointer"
+            onClick={toggleBalanceVisibility}
+            src={isBalanceVisible ? EyeOnIcon : EyeOffIcon}
+            alt={isBalanceVisible ? "Hide Balance" : "Show Balance"}
+           />
+        </div>
       </div>
-      <div className="mt-4 font-bold text-4xl">
-        {isBalanceVisible ? `₦${balance}` : `***`}
+      <div>
+        <p className="p-3 text-2xl">
+          {isBalanceVisible ? `₦${balance}` : `***`}
+        </p>
       </div>
     </div>
   );
