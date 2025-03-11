@@ -52,7 +52,7 @@ const SignIn: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="p-2 text-white w-full bg-amber-300 border-2 border-amber-300 rounded-[8px]"
+              className="p-2 text-white w-full bg-purple-600 border-2 border-purple-300 rounded-[8px]"
             >
               <span>Login</span>
             </button>

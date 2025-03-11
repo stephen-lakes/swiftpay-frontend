@@ -83,7 +83,7 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ handleNextPage, signUpData, han
             </div>
             <button
               type="submit"
-              className="p-2 text-white w-full bg-amber-300 border-2 border-amber-300 rounded-[8px]"
+              className="p-2 text-white w-full bg-purple-600 border-2 border-purple-600 rounded-[8px]"
             >
               <span>Sign up</span>
             </button>
