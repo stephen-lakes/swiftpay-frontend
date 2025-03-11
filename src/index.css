@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .loader {
-    @apply border-t-blue-500; /* Customize loader color */
+    @apply border-t-purple-600; /* Customize loader color */
     animation: spin 1s linear infinite;
   }
   
@@ -11,7 +11,7 @@
   }
 
 * {
-    font-family: inter;
+    font-family: "Inter";
     /* color: #06244B; */
 }
 
@@ -19,17 +19,4 @@ body, html{
     background-color: var(--color-gray-100) /* oklch(0.967 0.003 264.542) = #f3f4f6 */;
     min-width: 320px;
 
-}
-
-.example {
-  font-family: "inter-variable",sans-serif;
-  font-variation-settings: 'wght' 400, 'slnt' 0;
-}
-
-
-.inter-var-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
 }
