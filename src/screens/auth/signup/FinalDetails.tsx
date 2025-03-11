@@ -30,7 +30,7 @@ const FinalDetails: React.FC<FinalDetailsProps> = ({ signUpData, handleNextPage,
               <div className="form-group relative">
                 <label className="text-gray-500">Firstname</label>
                 <input
-                  className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
+                  className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-purple-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
                   placeholder="Firstname"
                   name="firstname"
                   value={signUpData.firstname}
@@ -41,7 +41,7 @@ const FinalDetails: React.FC<FinalDetailsProps> = ({ signUpData, handleNextPage,
               <div className="form-group relative">
                 <label className="text-gray-500">Lastname</label>
                 <input
-                  className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
+                  className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-purple-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
                   placeholder="Lastname"
                   name="lastname"
                   value={signUpData.lastname}
@@ -52,7 +52,7 @@ const FinalDetails: React.FC<FinalDetailsProps> = ({ signUpData, handleNextPage,
               <div className="form-group relative">
                 <label className="text-gray-500">Phone number (optional)</label>
                 <input
-                  className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
+                  className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-purple-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
                   placeholder="Phone"
                   name="phoneNumber"
                   value={signUpData.phoneNumber}
@@ -62,7 +62,7 @@ const FinalDetails: React.FC<FinalDetailsProps> = ({ signUpData, handleNextPage,
               </div>
               <button
                 type="submit"
-                className="p-2 text-white w-full bg-amber-300 border-2 border-amber-300 rounded-[8px]"
+                className="p-2 text-white w-full bg-purple-600 border-2 border-purple-600 rounded-[8px]"
               >
                 <span>Finish</span>
               </button>

@@ -51,7 +51,7 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ handleNextPage, signUpData, han
             <div className="form-group relative">
               <label className="text-gray-500">Email</label>
               <input
-                className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
+                className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-purple-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
                 placeholder="Enter your email or phone number"
                 name="email"
                 value={signUpData.email}
@@ -62,7 +62,7 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ handleNextPage, signUpData, han
             <div className="form-group relative">
               <label className="text-gray-500">Password</label>
               <input
-                className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
+                className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-purple-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
                 placeholder="Enter your password"
                 name="password"
                 value={signUpData.password}
@@ -73,7 +73,7 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ handleNextPage, signUpData, han
             <div className="form-group relative">
               <label className="text-gray-500">Confirm password</label>
               <input
-                className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
+                className="appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-purple-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
                 placeholder="Confirm your password"
                 name="confirmPassword"
                 value={signUpData.confirmPassword}

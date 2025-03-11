@@ -59,7 +59,7 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData 
             <input
               key={index}
               type="text"
-              className="appearance-none text-center text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-8 h-12 md:w-12 md:h-12 border-2 border-gray-200 rounded-[8px]"
+              className="appearance-none text-center text-gray-700 focus:outline-none focus:shadow-outline focus:border-purple-400 p-2 w-8 h-12 md:w-12 md:h-12 border-2 border-gray-200 rounded-[8px]"
               maxLength={1}
               ref={(el) => { inputs.current[index] = el; }}
               onChange={(e) => handleChange(e, index)}
@@ -67,7 +67,7 @@ const ConfirmEmail: React.FC<ConfirmEmailProps> = ({ handleNextPage, signUpData 
           ))}
         </div>
         <div className="text-xs mt-2">
-          <span className="text-[#3B82F6] flex justify-end cursor-pointer">resend OTP</span>
+          <span className="text-purple-600 flex justify-end cursor-pointer">resend OTP</span>
         </div>
         <div className="mt-4">
           {verifyingOTP && <Loader />}
