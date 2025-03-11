@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from "react";
 import ConfirmEmail from "./ConfirmEmail";
 import SignUpPage from "./SignUp";
 import FinalDetails from "./FinalDetails";
+import SetPIN from "./SetPIN";
 
 interface SignUpData {
     email: string;
@@ -44,6 +45,7 @@ const AuthIndex = () => {
         if (page === 1) return <SignUpPage handleNextPage={handleNextPage} signUpData={signUpData} handleChange={handleChange} />;
         if (page === 2) return <ConfirmEmail handleNextPage={handleNextPage} signUpData={signUpData} handlePreviousPage={handlePreviousPage} />;
         if (page === 3) return <FinalDetails handleNextPage={handleNextPage} signUpData={signUpData} handleChange={handleChange}/>
+        if (page === 4) return <SetPIN handleNextPage={handleNextPage} signUpData={signUpData} handleChange={handleChange}/>
     };
 
     return (

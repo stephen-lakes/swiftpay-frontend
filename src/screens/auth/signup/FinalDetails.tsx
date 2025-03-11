@@ -61,7 +61,6 @@ const FinalDetails: React.FC<FinalDetailsProps> = ({ signUpData, handleNextPage,
                 />
               </div>
               <button
-                type="submit"
                 className="p-2 text-white w-full bg-purple-600 border-2 border-purple-600 rounded-[8px]"
               >
                 <span>Finish</span>

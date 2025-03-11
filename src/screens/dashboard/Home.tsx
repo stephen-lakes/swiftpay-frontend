@@ -26,8 +26,8 @@ const Home:React.FC = () => {
 
         <div className="transactions pb-24 p-2">
           <header className="recent-transactions-header mt-6 flex">
-            <h1 className="font-bold text-xl">Recent Transactions</h1>
-            <div className="ml-auto">See All</div>
+            <h1 className="text-xl">Recent Transactions</h1>
+            <div className="ml-auto cursor-pointer">See All</div>
           </header>
           <input 
             className="my-2 appearance-none text-gray-700 focus:outline-none focus:shadow-outline focus:border-blue-400 p-2 w-full border-2 border-gray-200 rounded-[8px]"
