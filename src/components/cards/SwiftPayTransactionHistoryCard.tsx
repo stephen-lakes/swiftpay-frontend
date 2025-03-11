@@ -13,15 +13,15 @@ const SwiftPayTransactionHistoryCard: React.FC<SwiftPayTransactionHistoryCardPro
   return (
     <>
         <div className="flex items-center gap-2 transaction-list-item py-2">
-          <div className={`${type ==="debit" ? "bg-[#FDE8EA]": "bg-[#E8F1FD]"} w-10 h-10 flex items-center justify-center rounded-xs`}>A</div>
+          <div className={`${type ==="debit" ? "bg-[#FDE8EA]": "bg-[#E8F1FD]"} w-10 h-10 flex items-center justify-center rounded-xs uppercase font-medium`}>{service[0]}</div>
           <div className="text-xs font-light">
-            <p className={`text-sm font-semibold ${service.toLocaleLowerCase() === "transfer" ? "uppercase": ""}`}>{naration}</p>
+            <p className={`text-sm font-medium ${service.toLocaleLowerCase() === "transfer" ? "uppercase": ""}`}>{naration}</p>
             <p>{date}</p>
             <p>{time}</p>
           </div>
 
           <div className="ml-auto">
-            <div className={`${type==="debit"? "text-[#ED2F46]": "text-[#2F80ED]"} text-sm font-semibold`}>{`${type==="debit" ? "-" : type==="credit" ? "+" : ""}`}₦{amount}</div>
+            <div className={`${type==="debit"? "text-[#ED2F46]": "text-purple-400"} text-xs font-semibold`}>{`${type==="debit" ? "-" : type==="credit" ? "+" : ""}`}₦{amount}</div>
             <p className="text-xs text-right font-light capitalize">{service}</p>
           </div>
           
