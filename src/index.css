@@ -20,3 +20,16 @@ body, html{
     min-width: 320px;
 
 }
+
+.example {
+  font-family: "inter-variable",sans-serif;
+  font-variation-settings: 'wght' 400, 'slnt' 0;
+}
+
+
+.inter-var-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
