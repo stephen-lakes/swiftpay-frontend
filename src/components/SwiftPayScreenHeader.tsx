@@ -16,7 +16,8 @@ const goBack = () => {
 
   return (
     <>
-        <header className="mt-10 mb-3 px-3 flex items-center">
+        {/* <header className="mt-10 mb-3 px-3 flex items-center"> */}
+        <header className="w-full p-3 flex items-center justify-around fixed top-0 left-0 right-0 bg-[#f3f4f6]">
             <p className="cursor-pointer text-2xl flex items-center justify-center" onClick={goBack}>
               &larr;
             </p>
