@@ -32,7 +32,7 @@ const SwiftPayTransfer: React.FC = () => {
           </div>
 
 
-          <div className="p-3 flex items-center justify-center bg-amber-400 rounded text-white">
+          <div className="p-3 flex items-center justify-center bg-purple-600 text-white uppercase cursor-pointer rounded">
             PROCEED
           </div>
 
