@@ -14,7 +14,7 @@ const Home:React.FC = () => {
       <div>
         <div className="py-3 font-light">Hi, <span className="font-mono">Stephen</span></div>
 
-        <SwiftPayAccountBalanceCard balance="200,000" />
+        <SwiftPayAccountBalanceCard balance="200,000,000" />
 
         <div className="grid grid-cols-3 md:grid-cols-4 gap-3 mt-4 place-items-center">
           <SwiftPayMiniCard icon={SendIcon} title="transfer" nextPage="transfer" />
@@ -26,7 +26,7 @@ const Home:React.FC = () => {
 
         <div className="transactions pb-24 p-2">
           <header className="recent-transactions-header mt-6 flex">
-            <h1 className="font-bold">Recent Transactions</h1>
+            <h1 className="font-bold text-xl">Recent Transactions</h1>
             <div className="ml-auto">See All</div>
           </header>
           <input 

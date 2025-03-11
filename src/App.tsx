@@ -10,6 +10,7 @@ import Electricity from './screens/Electricity';
 import Data from './screens/Data';
 import Airtime from './screens/Airtime';
 import Dashboard from './screens/dashboard/Index';
+import SwiftPaySplashScreen from './screens/SwiftPaySplashScreen';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
 
         <Routes>
           {/* TODO: Landing page for the base route "/" */}
-          <Route path="/" element={<SignIn />} />
+          <Route path="/" element={<SwiftPaySplashScreen />} />
 
           <Route path="/dashboard" element={<Dashboard />}>
             <Route index element={<Home />} />

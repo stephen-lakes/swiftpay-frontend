@@ -14,7 +14,7 @@ const SwiftPayAccountBalanceCard: React.FC<SwiftPayAccountBalanceCardProp> = ({ 
   };
 
   return (
-    <div className="bg-green-500 text-white rounded p-3 flex flex-col gap-4">
+    <div className="bg-green-500 text-white rounded-xl p-3 flex flex-col gap-4">
       <div className="flex items-center gap-2">
         <span>Available Balance</span>
         <img
@@ -24,7 +24,7 @@ const SwiftPayAccountBalanceCard: React.FC<SwiftPayAccountBalanceCardProp> = ({ 
           alt={isBalanceVisible ? "Hide Balance" : "Show Balance"}
         />
       </div>
-      <div className="mt-4 text-xl">
+      <div className="mt-4 font-bold text-4xl">
         {isBalanceVisible ? `₦${balance}` : `***`}
       </div>
     </div>

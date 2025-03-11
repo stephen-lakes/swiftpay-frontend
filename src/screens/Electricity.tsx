@@ -4,7 +4,7 @@ import SwiftPayScreenHeader from '../components/SwiftPayScreenHeader'
 const Electricity: React.FC = () => {
   return (
     <>
-      <SwiftPayScreenHeader screenTitle="Electrcity"/>
+      <SwiftPayScreenHeader screenTitle="Electricity"/>
     </>
 
   )
