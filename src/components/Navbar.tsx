@@ -19,7 +19,7 @@ const Navbar = () => {
     <>
         {/* USE EVENT DELEGATIO FOR THE LINKS */}
         {/* <div className="min-w-[272px] p-3 flex items-center justify-around fixed bottom-2 left-1 right-1 bg-purple-400 rounded-full"> */}
-        <div className="w-full p-3 flex items-center justify-around fixed bottom-0 left-0 right-0 bg-[#f3f4f6]">
+        <div className="w-full p-3 flex items-center justify-around fixed bottom-0 left-0 right-0 bg-[#f3f4f6] shadow-2xl">
             
             <div onClick={() => handleClick("home")} className="cursor-pointer flex flex-col items-center">
                 <div>
