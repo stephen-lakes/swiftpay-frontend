@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import SwiftPayScreenHeader from '../../components/SwiftPayScreenHeader'
 
-import Item1 from "../../assets/img/37e70a3a-9571-4045-9eb6-5718b13dc1fd.jpeg"
-import Item2 from "../../assets/img/5a4b8d59-10af-4ab4-9c5d-b6591f8c6449.jpeg"
-import Item3 from "../../assets/img/60644b0c-8750-48ba-9224-06afb56bfd3e.avif"
-import Item4 from "../../assets/img/a56c012a-36e1-406c-95e7-b090bfccb288.avif"
-import Item5 from "../../assets/img/ac3aabde-10bf-449f-9839-c7983cef4efc.jpeg"
-import Carousel from '../../components/Carousel'
+// import Item1 from "../../assets/img/37e70a3a-9571-4045-9eb6-5718b13dc1fd.jpeg"
+// import Item2 from "../../assets/img/5a4b8d59-10af-4ab4-9c5d-b6591f8c6449.jpeg"
+// import Item3 from "../../assets/img/60644b0c-8750-48ba-9224-06afb56bfd3e.avif"
+// import Item4 from "../../assets/img/a56c012a-36e1-406c-95e7-b090bfccb288.avif"
+// import Item5 from "../../assets/img/ac3aabde-10bf-449f-9839-c7983cef4efc.jpeg"
+// import Carousel from '../../components/Carousel'
 
 
 const Cards: React.FC = () => {
@@ -55,7 +55,7 @@ const Cards: React.FC = () => {
         <div className="vCardsList">
           VCard List
 
-          <Carousel items={[Item1, Item2, Item3, Item4, Item5]} />
+          {/* <Carousel items={[Item1, Item2, Item3, Item4, Item5]} /> */}
           
         </div>
 

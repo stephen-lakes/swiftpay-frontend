@@ -1,21 +1,22 @@
-import { ChangeEvent, FormEvent } from "react";
-import { Link } from "react-router-dom";
+// import { ChangeEvent } from "react";
 import sPayLogo from "../../../assets/img/spaylogo1.png";
 
 interface SignUpPageProps {
   handleNextPage: () => void;
-  signUpData: {
-    email: string;
-    phoneNumber: string;
-    firstname: string;
-    lastname: string;
-    password: string;
-    confirmPassword: string;
-  };
-  handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  // signUpData: {
+  //   email: string;
+  //   phoneNumber: string;
+  //   firstname: string;
+  //   lastname: string;
+  //   password: string;
+  //   confirmPassword: string;
+  // };
+  // handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const SetPIN: React.FC<SignUpPageProps> = ({ handleNextPage, signUpData, handleChange }) => {
+const SetPIN: React.FC<SignUpPageProps> = ({ handleNextPage}) => {
+
+
    
 
   return (
@@ -31,7 +32,7 @@ const SetPIN: React.FC<SignUpPageProps> = ({ handleNextPage, signUpData, handleC
             ****
           
         </div>
-        <div className="mt-10 text-center text-xs capitalize">
+        <div onClick={handleNextPage} className="mt-10 text-center text-xs capitalize">
           DONE
         </div>
       </div>
