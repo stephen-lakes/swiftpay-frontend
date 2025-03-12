@@ -60,6 +60,9 @@ const SignIn: React.FC = () => {
           <div className="mt-10 text-center text-xs capitalize">
             <Link to="/auth/signup">Signup instead</Link>
           </div>
+          <div className="mt-10 text-center text-xs capitalize">
+            <Link to="/dashboard">Dashboard instead</Link>
+          </div>
         </div>
       </div>
     </div>
