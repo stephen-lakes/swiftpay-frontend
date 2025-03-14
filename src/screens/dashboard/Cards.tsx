@@ -88,7 +88,8 @@ const Cards: React.FC = () => {
                 onChange={handleCvcChange}
               />
             </div>
-            <div onClick={save} className="mt-6 p-3 flex items-center justify-center bg-purple-600 text-white uppercase cursor-pointer rounded">
+
+            <div onClick={save} className="mt-3 h-10 flex items-center justify-center bg-purple-600 text-white uppercase cursor-pointer rounded">
               SAVE
             </div>
           </div>
