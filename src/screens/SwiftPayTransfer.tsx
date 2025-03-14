@@ -8,7 +8,7 @@ const SwiftPayTransfer: React.FC = () => {
     <>
       <SwiftPayScreenHeader screenTitle="Swiftpay Transfer"/>
 
-      <form className='p-3'>
+      <form className='mt-16 p-3'>
         <div className="flex flex-col gap-3 px-3">
           <input
               // className="p-2 w-full border-2 border-gray-200 rounded-[8px]"
