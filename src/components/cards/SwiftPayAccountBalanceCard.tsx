@@ -14,7 +14,7 @@ const SwiftPayAccountBalanceCard: React.FC<SwiftPayAccountBalanceCardProp> = ({ 
   };
 
   return (
-    <div className="bg-purple-400 text-white flex flex-col rounded-lg">
+    <div className="bg-purple-400 text-white flex flex-col justify-between rounded-lg h-36">
       <div className="flex gap-2 items-center">
         <p className="pl-3 py-3">Available Balance</p>
         <div className="">
