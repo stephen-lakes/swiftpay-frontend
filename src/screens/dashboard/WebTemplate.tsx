@@ -1,21 +1,40 @@
 const WebTemplate = () => {
   return (
-    <div className="flex h-screen">
-        <div className="sidebar bg-blue-600 w-64 flex flex-col gap-4 sticky top-0 h-screen">
-            <p>SIDEBAR</p>
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
-        </div>
-        <div className="main bg-pink-600 flex-1">
-            <h1>MAIN CONTENT</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora eaque aspernatur similique nisi libero cum soluta suscipit odio, repellat maxime laboriosam id rem incidunt a quis dolor! Exercitationem laboriosam labore, eum at vitae error accusamus ipsum dolores maiores nesciunt velit quo placeat officiis, nam saepe unde delectus consectetur repellendus ratione dolore. Cumque aut id ipsa deserunt. Cumque est optio officia dicta quisquam tempore laborum modi, sed numquam, perspiciatis ratione dolorum minima ipsam a! Eligendi corporis nihil rerum eveniet atque sequi incidunt. Sint laudantium amet magnam? Adipisci, ducimus esse velit dolorum ab consequatur tempore fuga delectus vel eligendi ipsum explicabo rerum provident illum quas ratione totam iure, dolore debitis, ipsa saepe distinctio! Laudantium sint reprehenderit earum. Optio, vero commodi! Eius deleniti accusantium corrupti aspernatur, ipsum consequatur alias libero fugiat voluptates aliquam qui voluptatibus ratione et ipsam ullam a vitae fugit illum praesentium distinctio similique eaque? Vitae excepturi ipsam maxime dolore, cupiditate labore illo deserunt quisquam ad? Voluptatibus, adipisci omnis aperiam accusantium doloremque soluta, fugiat eveniet enim accusamus nam inventore est, reprehenderit fugit? Aut totam cumque laborum modi dolorem repellat possimus quos dolorum sunt quisquam, quo doloribus delectus! Deleniti provident doloribus laudantium tempora temporibus blanditiis qui exercitationem odit natus amet, repellat fuga quidem voluptates vitae adipisci molestiae quos quae iusto distinctio? In voluptatum quis sequi eligendi commodi vero fuga facilis culpa ullam cupiditate, blanditiis quos itaque unde officia, architecto expedita veniam. Voluptatibus doloribus soluta dolore et inventore minima sunt placeat consequatur id tempore commodi nemo quam pariatur enim laborum fugiat cum, quae assumenda alias, atque corporis. Eveniet dolores doloremque quis neque voluptatem aliquid placeat vitae voluptas reiciendis quasi porro sapiente ullam nulla, harum iure, tempora maiores expedita, libero distinctio blanditiis unde quam. Repudiandae expedita corrupti consectetur aperiam unde laboriosam, sapiente at illo tenetur enim, excepturi ut omnis necessitatibus quaerat error qui mollitia veniam vitae illum, placeat sed magnam esse? Esse quidem voluptatem, atque assumenda voluptatum ut harum consequatur, omnis amet laboriosam minima! Inventore quae cum libero laboriosam obcaecati quisquam similique molestiae esse eaque ipsa enim illum accusamus excepturi, vel vero. Ipsa quos, officiis eum, ratione eius rerum assumenda, debitis obcaecati repudiandae expedita ipsam veniam atque. Deserunt repudiandae itaque rem neque consequatur corporis totam cum odit minus doloribus. Doloremque quisquam provident quo explicabo praesentium. Doloribus voluptate alias suscipit, sint labore aspernatur architecto, quidem cupiditate beatae necessitatibus recusandae ipsum delectus illo nam? Rem illo ipsam cumque ipsum asperiores adipisci nihil modi voluptates commodi harum, aliquam nam magni, facilis fugit! Nam, eum rem itaque enim eaque voluptatibus quibusdam. Eaque fugiat at placeat omnis perspiciatis facilis unde tempore ipsum quisquam quis dolorum, autem voluptas aliquid dicta in saepe recusandae asperiores sint vero maxime porro a! Natus molestias fugiat totam nobis maxime porro, ipsam hic assumenda, eveniet, odit odio fugit. Consequuntur at, fuga vel nulla vero numquam, inventore quae ipsum repudiandae dicta voluptatibus delectus nam quam sapiente cumque, accusantium eum ut qui consequatur optio similique. Nisi cupiditate repellat, quibusdam deleniti eligendi in, cum voluptates quasi laboriosam explicabo repellendus quisquam temporibus asperiores! Cupiditate iste aliquid magni cumque, corrupti repellat minus culpa eaque dignissimos ducimus, vitae accusantium libero ad eum eveniet assumenda aliquam rerum debitis consequatur. Nam eum qui culpa dolore, consectetur adipisci dolorem repellendus fugiat iste rem, neque enim sit est temporibus aut. Ab facilis expedita tenetur. Delectus autem labore repellat dolore doloremque, error architecto cumque nostrum eveniet natus consequuntur excepturi, earum nam ex deserunt accusamus harum neque sapiente sed. Eos animi perferendis aliquid quas corrupti, eligendi quod iusto doloribus fuga laboriosam amet veniam qui molestiae quos cupiditate saepe, beatae ut, sed consequatur rerum magnam facere esse natus! Aspernatur vero velit qui quaerat eaque. Odit velit sint magnam magni explicabo aut itaque corrupti unde fugiat dolores? Voluptates deleniti nam praesentium nobis incidunt, facilis officiis ea saepe dolore natus illo magnam perferendis quisquam aspernatur quod magni assumenda alias soluta amet modi quos hic distinctio eius! Tempore impedit eos dolor officia minima necessitatibus soluta nemo. Incidunt dicta harum eum repudiandae tenetur fuga totam, inventore similique ipsa, distinctio debitis iusto unde odio repellendus assumenda reiciendis quisquam id natus optio suscipit voluptatum omnis nemo quae enim. Quas animi dolorem nesciunt optio, dolore laboriosam temporibus! Nihil, nisi! Asperiores, esse! Aspernatur quidem beatae, sint odio porro placeat minus culpa. Expedita distinctio placeat ab iste doloremque reiciendis incidunt sunt nostrum ea numquam illo dolores itaque corporis, tempora quidem deleniti magnam, delectus consequuntur quibusdam deserunt error repudiandae aspernatur alias. Similique debitis ipsam reiciendis, ex ut quaerat laborum. Quisquam impedit adipisci vero explicabo sint, ullam maxime sapiente minima, minus eum asperiores! Itaque praesentium, dignissimos natus quae, ea et distinctio optio dolorum quam nisi adipisci, consectetur dicta cum eum ipsum sunt. Amet natus dicta illum. Ipsa hic fuga, magni, nostrum quae accusamus itaque suscipit rem modi earum assumenda animi et culpa tempore inventore dolore laudantium doloribus praesentium consequuntur quos harum ipsum iste fugiat? Neque ipsum totam tempora excepturi, aliquid repellat consectetur illo, aspernatur ut dolores mollitia nostrum incidunt fugiat magni nisi nesciunt recusandae ullam quasi cum eum laborum. Nisi delectus deleniti quaerat animi tempore totam, iusto enim quia itaque voluptate adipisci officia facere cumque quidem harum quod tenetur magnam quos officiis amet, perspiciatis blanditiis ab aliquam? Nihil excepturi, esse quisquam aperiam omnis maiores praesentium ab sapiente, error qui, autem aspernatur culpa quidem quo nobis pariatur laborum? Minus sed adipisci qui, quibusdam veritatis optio, voluptatum delectus repudiandae saepe, dolorum magni odit. Reprehenderit ducimus eos necessitatibus suscipit, reiciendis, molestiae magnam odit odio explicabo quasi, assumenda illo eligendi qui! Esse et nemo ut error voluptates similique sunt quam labore eius velit perspiciatis, voluptate, deserunt impedit officia ipsum optio voluptatem, quaerat doloribus iusto rem tenetur accusamus maxime! Quidem cum harum necessitatibus expedita ratione, facilis adipisci deleniti eligendi nemo rerum accusantium error modi mollitia, quia obcaecati deserunt accusamus aperiam laboriosam cupiditate placeat distinctio laudantium similique dolorum fugiat? Omnis consequatur soluta deserunt ab vero ut minus neque eius natus dolores tempora, id molestiae illum suscipit odit, in ipsam iure non repellendus repudiandae ea laudantium! Ducimus nulla, velit dicta vel fugiat nemo porro. Illum cum praesentium aliquid, quibusdam earum quasi! Assumenda, vero. Excepturi, exercitationem.</p>
-        </div>
-        <div className="w-64 bg-green-600 sticky top-0 h-screen"></div>
-    </div>
+    <ThreeColumnLayout />
   )
 }
 
 export default WebTemplate
+
+interface NavLinkProps {
+  href: string;
+  label: string;
+}
+const NavLink: React.FC<NavLinkProps> = ({ href, label }) => (
+  <a href={href} className="flex flex-col sm:justify-center lg:justify-start lg:flex-row gap-1.5 lg:gap-2.5 items-center px-2 py-2.5 hover:text-[#6D28D9] bg-amber-200 lg:mt-2">
+    <div className="w-6 h-6 bg-green-700 rounded"></div>
+    <div className="text-[#22183C] text-[14.5px]">{label}</div>
+  </a>
+);
+
+const ThreeColumnLayout = () => {
+  return (
+    <div className="lg:flex h-screen bg-[#EFE4FC]">
+      <nav className="flex justify-between lg:justify-start lg:flex-col fixed bottom-0 left-0 right-0 lg:static lg:h-[100vh] bg-purple-300 flex-2 !p-3">
+        <NavLink href="" label="Home" />
+        <NavLink href="" label="Cards" />
+        <NavLink href="" label="Profile" />
+      </nav>
+      <div className="bg-red-300 flex-6 !p-3">
+        <div className="bg-pink-600 rounded-[.625rem] !p-3 min-h-96 h-full"></div>
+      </div>
+      <div className="bg-green-300 flex-3 !pb-40 lg:!pb-0">
+        <div className="!p-3 flex flex-col gap-4">
+          TRANSACTIONS
+          <div className="h-60 bg-red-700 rounded-[.625rem]"></div>
+          <div className="h-30 bg-red-400 rounded-[.625rem]"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
