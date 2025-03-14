@@ -26,7 +26,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, label, icon }) => (
 );
 
 const Nav: React.FC = () => (
-  <nav className="flex justify-between lg:justify-start lg:flex-col fixed bottom-0 left-0 right-0 lg:static lg:h-[100vh] flex-2 !p-3 sm:bg-[#191043] lg:bg-inherit">
+  <nav className="flex justify-between lg:justify-start lg:flex-col fixed bottom-0 left-0 right-0 lg:static lg:h-[100vh] flex-2 !p-3 bg-white lg:bg-inherit">
     <NavLink href="" label="Home" icon={HomeIcon} />
     <NavLink href="" label="Cards" icon={CardIcon} />
     <NavLink href="" label="Profile" icon={UserIcon} />
@@ -37,7 +37,7 @@ const SwiftPayAppLayout = () => {
   return (
     <div className="lg:flex lg:gap-6 h-screen bg-[#EFE4FC]">
       <Nav />
-      <main className="mt-6 flex-6 !p-3 rounded-3xl bg-white">
+      <main className="flex-6 rounded-3xl">
         <div className="rounded-[.625rem] !p-3 min-h-96 h-full">
           <Home />
         </div>

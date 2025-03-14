@@ -11,7 +11,6 @@ import Data from './screens/Data';
 import Airtime from './screens/Airtime';
 import Dashboard from './screens/dashboard/Index';
 import SwiftPaySplashScreen from './screens/SwiftPaySplashScreen';
-import WebTemplate from './screens/dashboard/WebTemplate';
 
 function App() {
   return (
@@ -19,9 +18,7 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          {/* TODO: Landing page for the base route "/" */}
           <Route path="/" element={<SwiftPaySplashScreen />} />
-          <Route path="/web" element={<WebTemplate />} />
 
           <Route path="/dashboard" element={<Dashboard />}>
             <Route index element={<Home />} />
