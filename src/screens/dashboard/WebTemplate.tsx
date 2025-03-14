@@ -2,13 +2,13 @@ import HomeIcon from "../../assets/svg/home.svg"
 import CardIcon from "../../assets/svg/creditcard.svg"
 import UserIcon from "../../assets/svg/profile.svg"
 
-const WebTemplate = () => {
+const SwiftPayDashboard = () => {
   return (
-    <ThreeColumnLayout />
+    <SwiftPayAppLayout />
   )
 }
 
-export default WebTemplate
+export default SwiftPayDashboard
 
 interface NavLinkProps {
   href: string;
@@ -32,7 +32,7 @@ const Nav: React.FC = () => (
   </nav>
 );
 
-const ThreeColumnLayout = () => {
+const SwiftPayAppLayout = () => {
   return (
     <div className="lg:flex h-screen bg-[#EFE4FC]">
       <Nav />
